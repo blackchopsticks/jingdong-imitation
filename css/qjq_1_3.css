@@ -1,0 +1,279 @@
+/*========================================底部===========================================================*/
+.footer{
+	min-width: 1200px;
+	height: 425px;
+	background: #f5f5f5;
+}
+.footer>div{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+/*==========================================头部===============================================================*/
+.header{
+	min-width: 1200px;
+	height: 26px;
+	background: #f3f3f3;
+	border-bottom: 1px solid #dcd9d9;
+}
+.header>div{
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #666666;
+	overflow: hidden;
+}
+.header>div span{
+	display: block;
+	float: left;
+	height: 14px;
+	line-height: 14px;
+	border-left: 1px solid #666;
+	padding-left: 12px;
+	margin-right: 12px;
+	margin-top: 8px;
+}
+.header>div span:first-child{
+	color: #333;
+	border: none;
+	margin-left: 790px;
+}
+.content{
+	width:1200px;
+	margin: 0 auto;
+	height: 700px;
+}
+.logo{
+	width: 1150px;
+	height: 81px;
+	padding: 12px 0 12px 50px;
+	border-bottom: 2px solid #ce1018;
+}
+.register{
+	height: 538px;
+	width: 1192px;
+	border: 4px solid #ebebf0;
+}
+.register1{
+	width: 1192px;
+	height: 47px;
+	line-height: 47px;
+	font-size: 15px;
+	color: #666666;
+	background: #f8f8f8;
+	text-indent: 20px;
+}
+.re_left,.re_right{
+	float: left;
+}
+.re_left{
+	width: 590px;
+	height: 382px;
+	margin-left: 93px;
+	margin-top: 25px;
+}
+.re_left>span{
+	display: block;
+	float: left;
+}
+
+.mail,.phone{	
+	width: 258px;
+	height: 21px;
+	line-height: 21px;
+	text-align: center;
+	padding-bottom: 17px;
+	font-size: 14px;
+	border-bottom: 1px solid #eaeaea;
+}
+.mail{
+	background: url(../images/qjq_1_3_c1_20.jpg) 30% 14% no-repeat;
+}
+.phone{
+	background: url(../images/qjq_1_3_c2_20.jpg) 30% 14% no-repeat;
+}
+.mail img,.phone img{
+	display: none;
+}
+.check{
+	border-bottom: 3px solid #e53b3b;
+	position: relative;
+}
+.check img{
+	display: block;
+	position: absolute;
+	left: 129px;
+	top: 40px;
+}
+/*.account{
+	width: 348px;
+	height: 52px;
+	margin:0 auto;
+	clear: both;
+	border: 1px solid #dedede;
+	margin-top: 30px;
+}*/
+/* .ac_show{
+	display: block;	
+	padding-top: 20px;
+}*/
+.account{
+	margin-top: 50px;
+}
+.account div{
+	display:none;
+}
+.ac_div{	
+	
+	width: 355px;
+	height: 65px;
+	margin:0 auto;
+	/*clear: both;*/
+	border: 1px solid #dedede;	
+	overflow: hidden;
+}
+.account .ac_show{
+	display: block;
+}
+.ac_div span{
+	font-size: 14px;
+	color: #666666;
+	padding-left: 19px;
+}
+.ac_div input{
+	border: none;
+	outline: none;
+	color: #ccc;
+	font-size: 14px;
+	margin-left: 27px;
+	width: 227px;
+	height: 65px;
+}
+.pass1{
+	/*border-top: none;
+	border-bottom: none*/;
+/*	border-collapse: collapse;*/
+	margin: 10px auto;
+}
+.verification{
+	width: 357px;
+	height: 54px;
+	margin: 0 auto;
+	overflow:hidden;
+	margin-top: 16px;	
+}
+.verification>div{
+	float: left;
+}
+.ver1{
+	width: 174px;
+	height: 52px;
+	border:1px solid #dedede;
+	font-size: 14px;
+	color: #666666;
+}
+.ver1 span{	
+	padding-top: 20px;
+	margin-left: 10px;
+}
+.ver1 input{
+	border:none;
+	outline: none;
+	width: 108px;
+	height: 52px;
+}
+.ver2{
+	width: 181px;
+	overflow: hidden;
+}
+.ver2 span{
+	display: block;
+	float: left;
+}
+.ver2 span:nth-child(2){
+	width: 46px;
+	font-size: 14px;
+	color: #0067c3;
+	padding-top: 10px;
+	margin-left: 12px;
+}
+.agree1{
+	height:15px;
+	line-height: 15px;
+	background: url(../images/qjq_1_3_c4_36.jpg) left center no-repeat;
+	font-size: 14px;
+	color: #666;
+	margin-left: 129px;
+	padding-left: 15px;
+	margin-top: 16px;
+}
+.agree1 span{
+	color: #0067c3;
+}
+.agree2{
+	width: 250px;
+	height: 35px;
+	background: #da1021;
+	text-align: center;
+	line-height: 35px;
+	font-size: 20px;
+	color: #fff;
+	margin: 20px auto;
+}
+.re_right{
+	width: 483px;
+	height: 450px;
+	margin-top: 10px;
+	border-left: 1px solid #e5e5e5;
+	padding-left: 20px;
+}
+.re_sp1{
+	display: block;
+	color: #444;
+	font-size: 14px;
+	margin-top: 16px;
+	margin-left: 48px;
+}
+.re_sp2{
+	color: #444;
+	font-size: 14px;
+	margin-left: 48px;
+}
+.re_btn{
+	width: 91px;
+	height: 28px;
+	background: url(../images/qjq_1_3_c9_14.jpg) left repeat-x;
+	color: #0067c3;
+	font-size: 14px;
+	border:1px solid #bdbdbd;
+	margin-top: 10px;
+	margin-left: 16px;
+}
+.coop{
+	height: 15px;
+	line-height: 15px;
+	font-size: 14px;
+	margin-left: 19px;
+	margin-top: 34px;
+}
+.coop span{
+	margin: 0 8px;
+}
+.coop img{
+	vertical-align: middle;
+}
+.qq{
+	display: block;
+	margin-left: 76px;
+	margin-top: 18px;
+}
+.rice{
+	display: block;
+	margin-left: 45px;
+	margin-top: 65px;
+}
+.shadow{
+	display: block;
+	width: 1200px;
+	margin0 auto;
+}

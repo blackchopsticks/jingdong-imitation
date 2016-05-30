@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/qjq_1_3.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div>
+			<span>Hi,欢迎您的到来</span>
+			<span>登录</span>
+			<span>注册</span>
+			<span>会员中心</span>
+			<span>客户服务</span>
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="content">
+		<div class="logo">
+			<img src="images/qjq_1_1_H_9_logo_29.png" alt="">
+		</div>
+		<div class="register">
+			<div class="register1">注册</div>
+			<div class="re_left">
+				<span class="re_sp mail check">邮箱注册<img src="images/qjq_1_1_C_12_07.png" alt=""></span>
+				<span class="re_sp phone">手机注册<img src="images/qjq_1_1_C_12_07.png" alt=""></span><br>
+				<div class="account">
+					<div class='ac_div ac_show'>
+						<span>邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" value="请输入邮箱地址" class="ac_mail">
+					</div>
+					<div class="ac_div">
+						<span>手机号：&nbsp;&nbsp;</span><input type="text" value="请输入手机号码" class="ac_phone">
+					</div>
+				</div>
+				<div class="ac_div pass1">
+					<span>设置密码：</span><input type="text" value="6-20个大小写英文字母、符号或数字" class="ac_pass">
+				</div>
+				<div class="ac_div pass2">
+					<span>确认密码：</span><input type="text" value="请再次输入密码" class="ac_pass1">
+				</div>
+				<div class="verification">
+					<div class="ver1">
+						<span>验证码：</span><input type="text">
+					</div>
+					<div class="ver2">
+						<span><img src="images/qjq_1_3_c3_32.jpg" alt=""></span>
+						<span>看不清<br>换一张</span>
+					</div>
+				</div>
+				<div class="agree1">我已阅读并同意<span>《商城用户协议》</span></div>
+				<div class="agree2">同意协议并注册</div>
+			</div>	
+			<div class="re_right">
+				<span class="re_sp1">已有商城账号</span>
+				<span class="re_sp2">请直接</span><button class="re_btn">登录</button>
+				<div class="coop">
+					<img src="images/qjq_1_3_c10_29.jpg" alt=""><span>使用合作网站账号登录</span><img src="images/qjq_1_3_c10_29.jpg" alt="">
+				</div>
+				<img src="images/qjq_1_3_c7_28.png" alt="" class="qq">
+				<img src="images/qjq_1_3_c8_35.jpg" alt="" class="rice">
+			</div>				
+		</div>
+		<img src="images/qjq_1_3_c11_74.jpg" alt="" class="shadow">
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<div>
+			<img src="images/qjq_f_1_03.jpg" alt="">
+		</div>
+	</div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+	$(function(){
+		$('.re_sp').click(function(){
+			$(this).addClass('check').siblings().removeClass('check');
+			var i=$(this).index();
+			$('.account div').eq(i).addClass('ac_show').show().siblings().removeClass('ac_show').hide();
+			// $('.account div input').eq(i).click(function(){
+			// 	if ($(this).val()=="请输入邮箱地址"||$(this).val()=="请输入手机号码") {
+			// 		$(this).val("");
+			// };
+			// })
+		});
+		$('.ac_div input').keydown(function(){
+			if ($(this).val()=="请输入邮箱地址"||$(this).val()=="请输入手机号码"||$(this).val()=='6-20个大小写英文字母、符号或数字'||$(this).val()=="请再次输入密码") {
+				$(this).val("");
+				$(this).css('color','#666666');
+			}
+		})		
+		$('.ac_mail').blur(function(){
+			var reg1=/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+			var a=$(this).val();
+			if (reg1.test(a)) {
+			$('.ac_show').css('border-color','#2de387');
+		}else{
+			$('.ac_show').css('border-color','red');
+			// alert("输入正确邮箱地址");
+		}
+		})
+		$('.ac_phone').blur(function(){
+			var regMobile=/^(\+\d{2,3}\-)?\d{11}$/;
+			var b=$('.ac_phone').val();
+			if (regMobile.test(b)) {
+				$('.ac_show').css('border-color','#2de387');
+			}else{
+				$('.ac_show').css('border-color','red');
+			}
+		})
+		$('.ac_pass').keydown(function(){			
+			$(this).attr('type','password');				
+		})
+		$('.ac_pass').blur(function(){
+			var reg3=/^(?=.{6,20}$)(?![0-9]+$)(?!.*(.).*\1)[0-9a-zA-Z_,.]+$/;	
+			var c=$('.ac_pass').val();
+			if (reg3.test(c)) {
+				$('.pass1').css('border-color','#2de387');
+			}else{
+				$('.pass1').css('border-color','red');
+			}
+		})
+		$('.ac_pass1').keydown(function(){
+			$(this).attr('type','password');
+		})
+		$('.ac_pass1').blur(function(){
+			var d=$(this).val();
+			if ($('.ac_pass').val()==d){
+				$('.pass2').css('border-color','#2de387');
+			}else{
+				$('.pass2').css('border-color','red');
+			}
+		})
+	})
+</script>
+</html>
